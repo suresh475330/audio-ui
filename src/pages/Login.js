@@ -64,14 +64,22 @@ export default function Login() {
     getRedirectResult(auth)
       .then((result) => {
         if (result) {
-          const token = result.user.accessToken;
-          // console.log(result.user);
-          dispatch(vaildateUser(token));
+          console.log("Woriking getRedirectResult");
         }
       }).catch((error) => {
         console.log(error);
       });
 
+  }, [])
+
+  useEffect(() => {
+    const unSubscribe = auth.onAuthStateChanged((result) => {
+      if (result) {
+        const token = result.accessToken;
+        dispatch(vaildateUser(token));
+      }
+    })
+    return () => unSubscribe();
   }, [dispatch])
 
 
