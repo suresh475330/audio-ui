@@ -73,15 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # .env config
 
 To config .env copy the URL of server and past it REACT_APP_BACKEND_URL,
-and than go to firebase console app and copy the config infomation and past it also go to firebase storage and copy the URL and past it  REACT_APP_FIREBASE_BUCKET_URL.
 
 * REACT_APP_BACKEND_URL=""
-* REACT_APP_FIREBASE_BUCKET_URL=""
-
-* REACT_APP_FIREBASE_API_KEY=""
-* REACT_APP_FIREBASE_AUTH_DOMAIN=""
-* REACT_APP_FIREBASE_PROJECT_ID=""
-* REACT_APP_FIREBASE_STORAGE_BUCKET=""
-* REACT_APP_FIREBASE_MESSAGING_SENDER_ID=""
-* REACT_APP_FIREBASE_APP_ID=""
 
